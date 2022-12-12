@@ -27,7 +27,7 @@ export const Thumbnail = ({
     // console.log("height", ref.current ? ref.current.offsetHeight : 0);
     // console.log("----------------------------");
   }, [ref.current?.offsetWidth, ref.current?.offsetHeight]);
-
+  console.log(calculatedSize);
   let width;
   if (!widthProp) {
     width = "100%";
@@ -89,7 +89,7 @@ export const Thumbnail = ({
 
   const iframeShade = {
     position: "relative",
-    marginBottom: `${-Math.abs(calculatedSize.height)}px`,
+    marginBottom: -190,
     width: calculatedSize.width,
     height: calculatedSize.height,
     zIndex: "10",
