@@ -89,7 +89,7 @@ export const Thumbnail = ({
 
   const iframeShade = {
     position: "relative",
-    margin: "0 0 -190px 0",
+    margin: `0 0 ${-Math.abs(calculatedSize.height)} 0`,
     width: calculatedSize.width,
     height: calculatedSize.height,
     zIndex: "10",
